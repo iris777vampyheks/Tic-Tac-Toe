@@ -1,0 +1,232 @@
+body {
+    background-image: url(../img/pexels-lucie-liz-3165335.jpg);
+    background-size: 100%;
+    height: 110vh;
+}
+
+.content-1 {
+    color: rgb(40, 40, 212);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #fd7c6b;
+    --color-quaternary: #f27160;
+    --color-quinary: #ef442d;
+}
+
+.text-shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+        9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(1.4rem + 4vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    animation: shadows 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+
+    10% {
+        transform: translate(-3px, -3px);
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    20% {
+        transform: translate(-6px, -6px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary);
+    }
+
+    30% {
+        transform: translate(-9px, -9px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    40% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+            12px 12px 0 var(--color-quinary);
+    }
+
+    50% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+            12px 12px 0 var(--color-quinary);
+    }
+
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+            12px 12px 0 var(--color-quinary);
+    }
+
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+            6px 6px 0 var(--color-tertiary);
+    }
+
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(123, 14, 225, 0.955);
+}
+
+
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(123, 14, 225, 0.955);
+}
+
+.square {
+    font-family: 'Press Start 2P', cursive;
+    width: 115px;
+    height: 115px;
+    border: 1px solid rgb(25, 11, 66);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.players label {
+    color: #f97c6c;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.players input {
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.square:hover {
+    background-color: rgb(205, 78, 250);
+}
+
+:root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(128, 0, 128);
+    --colorShadeB: rgb(153, 50, 204);
+    --colorShadeC: rgb(218, 112, 214);
+    --colorShadeD: rgb(221, 160, 221);
+    --colorShadeE: rgb(238, 130, 238);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+button {
+    height: 70px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+button.tic-button {
+    margin: 15px auto 0;
+    display: block;
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+button.tic-button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--colorShadeC);
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+button.tic-button:hover {
+    background: var(--colorShadeD);
+    transform: translate(0, 0.375em);
+}
+
+button.tic-button:hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+}
+
+button.tic-button:active {
+    transform: translate(0em, 0.75em);
+}
+
+button.tic-button:active::before {
+    transform: translate3d(0, 0, -1em);
+
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
