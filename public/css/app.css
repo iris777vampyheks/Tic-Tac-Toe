@@ -25,7 +25,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: calc(1.4rem + 4vw);
+    font-size: calc(1.7rem + 3vw);
     text-align: center;
     margin: 0;
     color: var(--color-primary);
@@ -115,7 +115,7 @@ body {
     margin: auto;
     width: 350px;
     height: 350px;
-    border: 2px solid black;
+    border: 1.2px solid black;
     border-radius: 10px;
     background-color: rgba(123, 14, 225, 0.955);
 }
@@ -170,7 +170,8 @@ body {
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 button {
-    height: 70px;
+    height: 77px;
+    width: 170px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -182,7 +183,7 @@ button {
     color: var(--colorShadeA);
     font-weight: 700;
     text-transform: uppercase;
-    font-family: inherit;
+    
 }
 
 button.tic-button {

@@ -52,8 +52,9 @@ squares.forEach(square => {
                 square.textContent = currentPlayer;
                 square.style.color = currentPlayer === 'X' ? 'rgb(40, 40, 212)' : 'black';
                 if (checkTheWinner(currentPlayer)) {
+                    highlightWinningLine(currentPlayer);
                     setTimeout(() => {
-                        highlightWinningLine(currentPlayer);
+                        console.log(currentPlayerName + ' wins!');
                         alert(currentPlayerName + ' wins!');
                     }, 100);
                 } else {
@@ -75,3 +76,9 @@ reset.addEventListener('click', () => {
     currentPlayer = 'X';
     currentPlayerName = playerOne.value;
 });
+
+
+
+
+
+
